@@ -14,7 +14,14 @@ interface BlogDetailPageProps {
 export async function generateMetadata({ params }: BlogDetailPageProps): Promise<Metadata> {
   try {
     const blog = await getBlogById(params.id);
-    const description = truncateText(blog.body.replace(/<[^>]*>/g, ''), 160);
+    if (!blog) {
+      return {
+        title: 'ブログ記事が見つかりません',
+        description: '指定されたブログ記事が見つかりませんでした。',
+      };
+    }
+
+    const description = blog.body ? truncateText(blog.body.replace(/<[^>]*>/g, ''), 160) : blog.title;
 
     return {
       title: blog.title,
@@ -22,7 +29,7 @@ export async function generateMetadata({ params }: BlogDetailPageProps): Promise
       openGraph: {
         title: `${blog.title} | 山田哲也 | ラクロス選手公式サイト`,
         description,
-        images: [blog.photo.url],
+        images: blog.photo?.url ? [blog.photo.url] : [],
         type: 'article',
         publishedTime: blog.publishedAt,
         modifiedTime: blog.updatedAt,
@@ -31,10 +38,11 @@ export async function generateMetadata({ params }: BlogDetailPageProps): Promise
         card: 'summary_large_image',
         title: blog.title,
         description,
-        images: [blog.photo.url],
+        images: blog.photo?.url ? [blog.photo.url] : [],
       },
     };
   } catch (error) {
+    console.error('Error generating metadata:', error);
     return {
       title: 'ブログ記事が見つかりません',
       description: '指定されたブログ記事が見つかりませんでした。',
@@ -61,6 +69,10 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       getBlogs(100)
     ]);
 
+    if (!blog) {
+      notFound();
+    }
+
     // Find previous and next blogs
     const currentIndex = allBlogs.contents.findIndex(b => b.id === params.id);
     const previousBlog = currentIndex < allBlogs.contents.length - 1 
@@ -71,7 +83,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       : undefined;
 
     return (
-      <div className="py-20 lg:py-32 bg-gradient-dark">
+      <section className="pt-24 pb-20 lg:pt-32 lg:pb-32 bg-gradient-dark min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <BlogDetail blog={blog} />
           <BlogNavigation
@@ -86,7 +98,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
             } : undefined}
           />
         </div>
-      </div>
+      </section>
     );
   } catch (error) {
     console.error('Failed to fetch blog:', error);
