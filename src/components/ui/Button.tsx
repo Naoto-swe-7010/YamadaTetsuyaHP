@@ -16,7 +16,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           {
             'bg-gradient-accent text-white hover:shadow-glow': variant === 'primary',
             'bg-white/10 text-white backdrop-blur-sm hover:bg-white/20': variant === 'secondary',
-            'border border-accent-400 text-accent-400 hover:bg-accent-400 hover:text-white': variant === 'outline',
+            'border border-accent-400 text-accent-400 hover:bg-accent-600 hover:text-white': variant === 'outline',
             'text-white hover:bg-white/10': variant === 'ghost',
           },
           {

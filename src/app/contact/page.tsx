@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'お問い合わせ | 山田哲也 | ラクロス選手公式サイト',
     description: '山田哲也選手へのお問い合わせはこちらから。ご質問やご相談がございましたら、お気軽にお声をかけください。',
-    images: ['/img8.jpeg'],
+    images: ['/img3.jpeg'],
   },
 };
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/img8.jpeg"
+            src="/img3.jpeg"
             alt="お問い合わせ背景"
             fill
             className="object-cover opacity-20"
