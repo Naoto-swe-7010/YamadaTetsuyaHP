@@ -15,6 +15,8 @@ interface ImageWithFallbackProps {
   priority?: boolean;
   sizes?: string;
   objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
+  placeholder?: 'blur' | 'empty';
+  blurDataURL?: string;
 }
 
 export default function ImageWithFallback({
@@ -26,6 +28,8 @@ export default function ImageWithFallback({
   className,
   fallbackSrc = '/img11.png',
   priority = false,
+  placeholder = 'blur',
+  blurDataURL,
   sizes,
   objectFit = 'cover',
   ...props
@@ -86,6 +90,8 @@ export default function ImageWithFallback({
         onLoad={handleLoad}
         priority={priority}
         sizes={sizes}
+        placeholder={placeholder}
+        blurDataURL={blurDataURL}
         {...props}
       />
       {isLoading && (
