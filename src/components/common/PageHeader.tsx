@@ -6,9 +6,10 @@ interface PageHeaderProps {
   subtitle?: string;
   backgroundImage?: string;
   className?: string;
+  priority?: boolean;
 }
 
-export default function PageHeader({ title, subtitle, backgroundImage, className }: PageHeaderProps) {
+export default function PageHeader({ title, subtitle, backgroundImage, className, priority = true }: PageHeaderProps) {
   return (
     <section className={cn('relative py-24 lg:py-32 flex items-center justify-center', className)}>
       {/* Background Image */}
@@ -19,7 +20,10 @@ export default function PageHeader({ title, subtitle, backgroundImage, className
             alt=""
             fill
             className="object-cover"
-            priority
+            priority={priority}
+            sizes="100vw"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyLli5WJMdGBHm6xDcnRMO9cAZu9mfhUmCgdYbq2LJlmyVABc/VCg3b9TBnAa6yb7KJbFjbhGKJjwgY+oMjHpXNBvq6PmibpQQjByaJqTFgP6B8mXvg48OsJ9PRR0Nj6zOWmCZLo8tBLnJWpqrCUJWKrYQ="
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
