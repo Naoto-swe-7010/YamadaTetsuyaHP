@@ -12,8 +12,8 @@ export default function ChallengeSection() {
       icon: "🇨🇦"
     },
     {
-      title: "2028年LAオリンピック日本代表を目指して挑戦中",
-      description: "大学から始めたラクロスで、世界最高峰の舞台を目指す。過去の弱い自分を乗り越え、オリンピックメダリストになる夢を追いかけています。",
+      title: "アジア出身選手として初のNational Lacrosse Leagueの選手を目指して挑戦中",
+      description: "北米プロリーグで、アジア人初の選手としてプレーすることを目指す。過去の弱い自分を乗り越え、プロ選手になる夢を追いかけています。",
       icon: "🥇"
     },
     {

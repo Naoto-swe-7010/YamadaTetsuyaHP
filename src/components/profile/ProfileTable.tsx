@@ -10,12 +10,8 @@ export default function ProfileTable() {
       value: (
         <div>
           <div className="mb-1">
-            <span className="font-semibold text-accent-400">日本</span><br />
-            FALCONS　LACROSSE　CLUB
-          </div>
-          <div>
             <span className="font-semibold text-accent-400">カナダ</span><br />
-            Hamilton　Sr.B　Bengals
+            Owen Sound North Stars
           </div>
         </div>
       )
@@ -48,12 +44,12 @@ export default function ProfileTable() {
         <div>
           <div className="mb-2">
             <span className="font-semibold text-accent-400">大学</span><br />
-            関東学生リーグ部1部<br />
-            昇格22歳以下日本代表
+            U21 World Lacrosse championship出場
           </div>
           <div>
             <span className="font-semibold text-accent-400">社会人</span><br />
-            2023 男子ラクロス日本代表 (練習生)
+            男子ラクロス日本代表(練習生)<br />
+            男子BOXラクロス日本代表(練習生)
           </div>
         </div>
       )

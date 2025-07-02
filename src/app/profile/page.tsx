@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import PageHeader from '@/components/common/PageHeader';
 import ProfileImage from '@/components/profile/ProfileImage';
 import ProfileTable from '@/components/profile/ProfileTable';
-import ChallengeStory from '@/components/profile/ChallengeStory';
 
 export const metadata: Metadata = {
   title: 'プロフィール',
@@ -37,10 +36,6 @@ export default function ProfilePage() {
               <ProfileTable />
             </div>
 
-            {/* Challenge Story */}
-            <div>
-              <ChallengeStory />
-            </div>
           </div>
         </div>
       </section>

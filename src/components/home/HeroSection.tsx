@@ -33,7 +33,7 @@ export default function HeroSection() {
           
           <div className="mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <p className="text-lg md:text-xl text-white mb-4">
-              2028年LAオリンピック日本代表を目指して
+              アジア出身選手として初のNational Lacrosse Leagueの選手を目指して
             </p>
             <p className="text-lg md:text-xl text-white">
               カナダで挑戦中

@@ -13,35 +13,35 @@ export default function KeyMessage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="text-center lg:text-left">
               <div className="mb-8">
-                <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 animate-slide-in-left">
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-white mb-4 animate-slide-in-left leading-relaxed">
                   夢を持ち、実現に向け
                 </h3>
-                <h3 className="text-2xl lg:text-3xl font-bold text-accent-400 animate-slide-in-left" style={{ animationDelay: '0.1s' }}>
-                  一歩踏み出す勇気！！
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-accent-400 animate-slide-in-left leading-relaxed" style={{ animationDelay: '0.1s' }}>
+                  一歩踏み出す勇気
                 </h3>
               </div>
               <p className="text-lg text-gray-300 leading-relaxed animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
-                高校時代、テニス部で一度も団体戦に出場できず、
-                練習中は時間が過ぎるのをただ待っていました。
-                そんな過去がある弱い自分でも、大学から始めたスポーツで
-                オリンピックメダリストになることを目指しています。
+                高校時代はテニス部に所属しておりましたが、3年間一度も団体戦に出場することはありませんでした。練習に身が入らず、コートの隅で時間が過ぎるのをただ待っておりました。競技への熱意を失ったまま、高校生活を終えました。
+                <br />
+                大学入学後にラクロスと出会い、競技を始めました。練習を重ねるうちにのめり込み、多くの時間を費やしました。その結果、21歳以下の日本代表に選出され、国際大会に出場いたしました。
               </p>
             </div>
 
-            <div className="text-center lg:text-right">
+            <div className="text-center lg:text-left">
               <div className="mb-8">
                 <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-white mb-4 animate-slide-in-left leading-relaxed" style={{ animationDelay: '0.3s' }}>
-                  &quot;人はいつからでも<br className="sm:hidden" />
-                  <span className="text-accent-400">
-                    何にでもなれる&quot;
-                  </span>
+                  人はいつからでも
+                </h3>
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-accent-400 animate-slide-in-left leading-relaxed" style={{ animationDelay: '0.4s' }}>
+                  何にでもなれる
                 </h3>
               </div>
               <p className="text-lg text-gray-300 leading-relaxed animate-slide-in-left" style={{ animationDelay: '0.5s' }}>
-                目標達成に向けて挑戦する姿、成長や思考、
-                環境が変化する過程を発信することで
-                1人でも多くの人に自分の想いを伝えられたら嬉しいです。
-                誰かの人生が豊かになるキッカケになれることを願います。
+                現在は、本場・北米のボックスラクロスプロリーグで、アジア人初の選手としてプレーすることを目指して活動しております。
+                <br />
+                挑戦を続ける中で、夢中になることの面白さや、踏み出す勇気の大切さを伝えていきたいと思っております。目標達成に向けて挑戦する姿、成長や思考、環境が変化する過程を発信することで1人でも多くの人に自分の想いを伝えることができれば幸いです。
+                <br />
+                誰かの人生が豊かになるキッカケになることができれば嬉しく思います。
               </p>
             </div>
           </div>

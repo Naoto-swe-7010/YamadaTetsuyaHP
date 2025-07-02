@@ -12,21 +12,24 @@ export default function ChallengeStory() {
             <div className="space-y-6 text-gray-300 leading-relaxed pr-4 text-center">
               <div>
                 <p className="mb-3">
-                  高校時代に所属していたテニス部では一度も団体戦に出たことがありません。
+                  高校時代はテニス部に所属していたが、3年間一度も団体戦に出場することはなかった。
                 </p>
                 <p className="mb-3">
-                  練習中は時間が過ぎるのをただ待っていました。
+                  練習に身が入らず、コートの隅で時間が過ぎるのをただ待っていた。
                 </p>
                 <p>
-                  マイナスな発言ばかりで周りにも迷惑を掛けていました。
+                  競技への熱意を失ったまま、高校生活を終える。
                 </p>
               </div>
               
               <div>
+                <p className="mb-3">
+                  大学入学後にラクロスと出会い、競技を始める。練習を重ねるうちにのめり込み、多くの時間を費やす。
+                </p>
                 <p>
-                  そんな過去がある弱い自分でも、大学から始めたスポーツで
-                  <span className="text-accent-400 font-semibold">オリンピックメダリスト</span>
-                  になることを目指しています。
+                  その結果、21歳以下の日本代表に選出され、国際大会に出場。現在は、本場・北米のボックスラクロスプロリーグで、
+                  <span className="text-accent-400 font-semibold">アジア人初の選手</span>
+                  としてプレーすることを目指している。
                 </p>
               </div>
               
@@ -45,6 +48,9 @@ export default function ChallengeStory() {
               </div>
               
               <div>
+                <p className="mb-3">
+                  挑戦を続ける中で、夢中になることの面白さや、踏み出す勇気の大切さを伝えていきたい。
+                </p>
                 <p className="mb-3">
                   目標達成に向けて挑戦する姿、成長や思考、環境が変化する過程を発信することで
                   1人でも多くの人に自分の想いを伝えられたら嬉しいです。
