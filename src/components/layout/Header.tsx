@@ -65,7 +65,7 @@ const Header = () => {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`transition-colors duration-300 text-sm lg:text-base font-medium relative group ${
+                    className={`transition-colors duration-300 text-sm lg:text-base font-bold relative group ${
                       isActive 
                         ? 'text-accent-400' 
                         : 'text-white hover:text-accent-400'
@@ -123,7 +123,7 @@ const Header = () => {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`transition-colors duration-300 text-lg font-medium py-2 border-b border-white/10 last:border-b-0 ${
+                      className={`transition-colors duration-300 text-lg font-bold py-2 border-b border-white/10 last:border-b-0 ${
                         isActive 
                           ? 'text-accent-400' 
                           : 'text-white hover:text-accent-400'
