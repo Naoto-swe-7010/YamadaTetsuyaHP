@@ -5,7 +5,7 @@ export default function ProfileImage() {
     <div className="relative">
       <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl shadow-accent-400/20 animate-fade-in">
         <Image
-          src="/img9.jpg"
+          src="/Img9.jpg"
           alt="山田哲也選手のプロフィール写真"
           width={320}
           height={320}

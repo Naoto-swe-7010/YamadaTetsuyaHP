@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ブログ | 山田哲也 | ラクロス選手公式サイト',
     description: '山田哲也選手の挑戦の記録、思考や環境の変化を綴ったブログ記事の一覧です。',
-    images: ['/img7.jpeg'],
+    images: ['/Img7.jpg'],
   },
 };
 
@@ -41,7 +41,7 @@ export default function BlogPage() {
       <PageHeader
         title="Blog"
         subtitle="挑戦の記録"
-        backgroundImage="/img4.jpg"
+        backgroundImage="/Img4.jpg"
       />
 
       <section className="py-20 lg:py-32 bg-gradient-dark">

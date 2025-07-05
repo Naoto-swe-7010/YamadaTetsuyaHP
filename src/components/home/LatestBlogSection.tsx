@@ -13,7 +13,7 @@ export default async function LatestBlogSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/img10.jpeg"
+          src="/Img10.jpg"
           alt="ブログセクション背景"
           fill
           className="object-cover opacity-20"

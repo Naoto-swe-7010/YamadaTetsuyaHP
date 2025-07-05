@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '山田哲也 | ラクロス選手公式サイト',
     description: 'カナダでLAオリンピック日本代表を目指して挑戦している山田哲也選手の公式サイト',
-    images: ['/img1.jpeg'],
+    images: ['/Img6.jpg'],
   },
   robots: {
     index: true,

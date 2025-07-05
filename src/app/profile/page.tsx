@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'プロフィール | 山田哲也 | ラクロス選手公式サイト',
     description: '山田哲也選手の詳細なプロフィール情報。生年月日、所属チーム、経歴、挑戦のきっかけなどを紹介しています。',
-    images: ['/img2.jpeg'],
+    images: ['/Img2.jpg'],
   },
 };
 
@@ -19,7 +19,7 @@ export default function ProfilePage() {
       <PageHeader
         title="Profile"
         subtitle="プロフィール"
-        backgroundImage="/img5.jpg"
+        backgroundImage="/Img5.jpg"
       />
 
       <section className="py-20 lg:py-32 bg-gradient-dark">
