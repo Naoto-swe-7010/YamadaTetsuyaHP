@@ -26,7 +26,7 @@ export default function ImageWithFallback({
   height,
   fill,
   className,
-  fallbackSrc = '/img11.png',
+  fallbackSrc = '/Image11.png',
   priority = false,
   placeholder = 'blur',
   blurDataURL,

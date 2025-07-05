@@ -6,7 +6,7 @@ export default function StructuredData() {
     alternateName: 'Tetsuya Yamada',
     description: 'カナダでLAオリンピック日本代表を目指して挑戦している日本のラクロス選手',
     url: 'https://tetsuya-yamada.com',
-    image: 'https://tetsuya-yamada.com/Img1.jpg',
+    image: 'https://tetsuya-yamada.com/Image1.jpg',
     sameAs: [
       'https://www.instagram.com/tetsu.yamada94/'
     ],

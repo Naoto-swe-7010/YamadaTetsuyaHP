@@ -28,7 +28,7 @@ export default function ChallengeSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/Img3.jpg"
+          src="/Image3.jpg"
           alt="挑戦の背景"
           fill
           className="object-cover"

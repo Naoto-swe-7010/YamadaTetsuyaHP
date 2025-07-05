@@ -8,10 +8,10 @@ export default function ImageGallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: '/img4.jpg', alt: 'トレーニング風景1' },
-    { src: '/img5.jpg', alt: 'トレーニング風景2' },
-    { src: '/img6.jpg', alt: 'チームでの活動' },
-    { src: '/img12.jpeg', alt: '試合での様子' },
+    { src: '/Image4.jpg', alt: 'トレーニング風景1' },
+    { src: '/Image5.jpg', alt: 'トレーニング風景2' },
+    { src: '/Image6.jpg', alt: 'チームでの活動' },
+    { src: '/Image12.jpeg', alt: '試合での様子' },
   ];
 
   return (

@@ -21,7 +21,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 bg-black">
         <div 
-          className={`absolute inset-0 w-full max-w-[1500px] mx-auto transition-opacity duration-1000 ${
+          className={`absolute inset-0 w-full max-w-[1500px] mx-auto transition-opacity duration-500 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           style={isWideScreen ? {
@@ -30,7 +30,7 @@ export default function HeroSection() {
           } : {}}
         >
           <Image
-            src="/Img16.jpg"
+            src="/Image16.jpg"
             alt="山田哲也選手のメイン画像"
             fill
             className="object-cover"
@@ -46,7 +46,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20 font-bold transition-opacity duration-1000 ${
+      <div className={`relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20 font-bold transition-opacity duration-500 ${
         imageLoaded ? 'opacity-100' : 'opacity-0'
       }`}>
         <div className="max-w-4xl">
@@ -55,13 +55,13 @@ export default function HeroSection() {
             <span className="text-accent-400">YAMADA</span>
           </h1>
           
-          <p className="text-xl md:text-2xl lg:text-3xl text-gray-200 mb-8 text-left">
+          <p className="text-xl md:text-xl lg:text-2xl text-gray-200 mb-8 text-left">
             Lacrosse Player
           </p>
           
-          <div className="mb-12 text-left">
-            <p className="text-lg md:text-xl text-white mb-4">
-              アジア出身選手として初の<span className="text-accent-300 font-semibold">National Lacrosse League</span>の選手を目指して
+          <div className="mb-12 text-left opacity-50">
+            <p className="text-lg md:text-xl text-white mb-2">
+              アジア出身選手として初の<span className="text-accent-300 font-semibold">National Lacrosse League</span>を目指して
             </p>
             <p className="text-lg md:text-xl text-white">
               カナダで挑戦中

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: '山田哲也公式サイト',
     images: [
       {
-        url: '/img1.jpeg',
+        url: '/Image1.jpeg',
         width: 1200,
         height: 630,
         alt: '山田哲也選手',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '山田哲也 | ラクロス選手公式サイト',
     description: 'カナダでLAオリンピック日本代表を目指して挑戦している山田哲也選手の公式サイト',
-    images: ['/Img6.jpg'],
+    images: ['/Image6.jpg'],
   },
   robots: {
     index: true,
