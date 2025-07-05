@@ -1,7 +1,5 @@
 "use client"
 import Image from 'next/image';
-import Link from 'next/link';
-import Button from '@/components/ui/Button';
 import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
@@ -10,7 +8,7 @@ export default function HeroSection() {
 
   useEffect(() => {
     const checkScreenWidth = () => {
-      setIsWideScreen(window.innerWidth >= 2000);
+      setIsWideScreen(window.innerWidth >= 1500);
     };
     
     checkScreenWidth();
@@ -23,7 +21,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 bg-black">
         <div 
-          className={`absolute inset-0 w-full max-w-[2000px] mx-auto transition-opacity duration-1000 ${
+          className={`absolute inset-0 w-full max-w-[1500px] mx-auto transition-opacity duration-1000 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           style={isWideScreen ? {
@@ -45,26 +43,26 @@ export default function HeroSection() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         {/* Side gradients for wide screens */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-0 min-[2000px]:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-100" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center font-bold">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+      <div className={`relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-20 font-bold transition-opacity duration-1000 ${
+        imageLoaded ? 'opacity-100' : 'opacity-0'
+      }`}>
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-left">
             <span className="block mb-2">TETSUYA</span>
-            <span className="text-accent-400">
-              YAMADA
-            </span>
+            <span className="text-accent-400">YAMADA</span>
           </h1>
           
-          <p className="text-xl md:text-2xl lg:text-3xl text-gray-200 mb-8 animate-slide-up ">
+          <p className="text-xl md:text-2xl lg:text-3xl text-gray-200 mb-8 text-left">
             Lacrosse Player
           </p>
           
-          <div className="mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <div className="mb-12 text-left">
             <p className="text-lg md:text-xl text-white mb-4">
-              アジア出身選手として初のNational Lacrosse Leagueの選手を目指して
+              アジア出身選手として初の<span className="text-accent-300 font-semibold">National Lacrosse League</span>の選手を目指して
             </p>
             <p className="text-lg md:text-xl text-white">
               カナダで挑戦中
